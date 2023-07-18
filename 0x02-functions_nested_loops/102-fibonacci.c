@@ -2,33 +2,26 @@
 
 /**
  * main - print first 50 Fibonacci numbers
- *
  * Return: 0
  */
 
 int main(void)
 {
-    int countto = 50;
-    long fib[countto];
-    int i;
+	int counter;
+	int countto = 50;
+	long a = 1;
+	long b = 2;
 
-    // Initialize first two Fibonacci numbers
-    fib[0] = 1;
-    fib[1] = 1;
+	for (counter = 1; counter <= (countto / 2); counter++)
+	{
+		printf("%li %li ", a, b);
+		a += b;
+		b += a;
+	}
+	if (countto % 2 == 1)
+		printf("%li", a);
 
-    // Generate remaining Fibonacci numbers
-    for (i = 2; i < countto; i++)
-    {
-        fib[i] = fib[i - 1] + fib[i - 2];
-    }
+	printf("\n");
 
-    // Print all Fibonacci numbers
-    for (i = 0; i < countto; i++)
-    {
-        printf("%li ", fib[i]);
-    }
-
-    printf("\n");
-
-    return (0);
+	return (0);
 }
