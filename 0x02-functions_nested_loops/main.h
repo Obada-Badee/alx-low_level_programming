@@ -33,5 +33,3 @@ int add(int, int);
 void print_to_98(int n);
 
 void print_times_table(int n);
-
->>>>>>> 50bae69e54e9ff5b0b389408afc8c0e41be3a271
