@@ -9,13 +9,15 @@
 int main(void)
 {
     int sum = 0;
-    int num_threes = (1023 / 3);
-    int num_fives = (1023 / 5);
-    int num_fifteens = (1023 / 15);
+    int i;
 
-    sum += (3 * num_threes * (num_threes + 1)) / 2;
-    sum += (5 * num_fives * (num_fives + 1)) / 2;
-    sum -= (15 * num_fifteens * (num_fifteens + 1)) / 2;
+    for (i = 1; i < 1024; i++)
+    {
+        if (i % 3 == 0 || i % 5 == 0)
+        {
+            sum += i;
+        }
+    }
 
     printf("%d\n", sum);
 
