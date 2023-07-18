@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 50bae69e54e9ff5b0b389408afc8c0e41be3a271
 /**
  *_putchar - print the character
  */
@@ -15,13 +10,7 @@ int _putchar(char c);
 
 void print_alphabet(void);
 
-<<<<<<< HEAD
 
-void print_alphabet_x10(void);
-=======
-/**
- * print_alphabet_x10 - print lowercase alphabet ten times
- */
 
 void print_alphabet_x10(void);
 
