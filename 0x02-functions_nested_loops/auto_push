@@ -1,1 +1,4 @@
-cac
+#!/bin/bash
+git add .
+git commit -m "Solution Done"
+git push
