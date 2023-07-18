@@ -27,7 +27,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar('0' + value);
 			}
-			else if (product > 9)
+			else if (value > 9)
 			{
 				_putchar(',');
 				_putchar(' ');
