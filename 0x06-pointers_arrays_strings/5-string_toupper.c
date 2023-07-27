@@ -1,18 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *main - check the code for Holberton School students.
- *
- *Return: Always 0.
+ *string_toupper - capitalize all letters in string
+ *@s: string to manipulate
+ *Return: string with all letters capitalized
  */
-int main(void)
-{
-	char s[] = "Holberton School!\n";
-	char *p;
 
-	p = string_toupper(s);
-	printf("%s", p);
-	printf("%s", s);
-	return (0);
+char *string_toupper(char *s)
+{
+	int i = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] = s[i] - 'a' + 'A';
+	}
+
+	return (s);
 }
