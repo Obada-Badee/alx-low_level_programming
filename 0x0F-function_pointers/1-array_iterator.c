@@ -2,10 +2,11 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- *array_iterator - print a number
- *@array: pointer to array
- *@size: size of array
- *@action: pointwer to function that returns nothing
+ * array_iterator - print a number
+ * @array: pointer to array
+ * @size: size of array
+ * @action: pointwer to function that returns nothing
+ * Return: nothing
  **/
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
